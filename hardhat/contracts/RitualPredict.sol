@@ -488,3 +488,63 @@ struct MarketView {
 
 
 }
+mapping(
+
+uint256=>uint256
+
+)
+
+public marketVolume;
+
+
+
+event VolumeUpdated(
+
+    uint256 indexed marketId,
+
+    uint256 volume
+
+);
+function getMarketView(
+
+uint256 id
+
+)
+
+external
+
+view
+
+returns(
+
+MarketView memory
+
+)
+
+{
+
+
+Market storage market=
+
+markets[id];
+
+
+
+return MarketView({
+
+id:market.id,
+
+question:market.question,
+
+deadline:market.deadline,
+
+resolved:market.resolved,
+
+result:market.result,
+
+volume:marketVolume[id]
+
+});
+
+
+}

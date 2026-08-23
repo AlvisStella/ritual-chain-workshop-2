@@ -106,3 +106,43 @@ betting model is plain pari-mutuel: two running totals and one mapping per side.
 - Ritual Chain docs — <https://docs.ritualfoundation.org>
 - dApp skills — <https://github.com/ritual-foundation/ritual-dapp-skills>
 - Explorer — <https://explorer.ritualfoundation.org> · Faucet — <https://faucet.ritualfoundation.org>
+# Full Stack Builder Edition
+
+
+
+## Product Goal
+
+
+The goal of this extension was to
+transform the smart contract into a
+simple user-facing prediction market.
+
+
+
+## Added Features
+
+
+### Smart Contract
+
+
+- Frontend friendly view functions
+
+- Volume tracking
+
+- User prediction support
+
+
+
+### Frontend
+
+
+Implemented:
+
+
+- Market dashboard
+
+- Wallet connection
+
+- Prediction buttons
+
+- Contract interaction layer

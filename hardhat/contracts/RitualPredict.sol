@@ -465,3 +465,26 @@ contract RitualPredict {
     /// Scheduler gas refunds land in RitualWallet, but accept plain transfers anyway.
     receive() external payable {}
 }
+struct MarketView {
+
+
+    uint256 id;
+
+
+    string question;
+
+
+    uint256 deadline;
+
+
+    bool resolved;
+
+
+    bool result;
+
+
+    uint256 volume;
+
+
+
+}
